@@ -1,0 +1,148 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage{geometry}
+    \geometry{textwidth=6.2in, top=1.3in}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    
+    \usepackage{lmodern}
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Loic Murumba}}\\
+	muruloic@gmail.com $\cdot$ 613-700-4103 $\cdot$ https://loic.ml\\
+\end{center}
+
+%==== Experience ====%
+\header{Work Experience}
+\vspace{1mm}
+
+\textbf{Google} \hfill Waterloo, ON\\
+\text{Intern} \hfill May 2018 | Aug 2018\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Developed new tab in existing review tool to streamline suspicious advertisement review process.
+    \item Investigated malicious advertisements and analyzed what signals are associated with unacceptable behaviour in different ad products. Designed the tab to include these signals.
+    \item Reduced the number of tools required to review ads by 75\% by consolidating signals from multiple data sources.
+	\item Implemented feature extractors to support ad information in existing repository; organized binary launch process.
+	\item Developed interprocess communication between user interface, back-end, and ad scan databases.
+	\item Authored design document for the project; received constructive feedback and answered questions from experienced engineers.
+\end{itemize}
+
+\textbf{StarterHacks} \hfill Waterloo, ON\\
+\text{Organizer} \hfill Sept 2018 | Present\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \item Implementing rails app to handle user registration and applications
+    \item Updating HTML landing page to be more user friendly
+\end{itemize}
+
+\textbf{Mitre Media} \hfill Toronto, ON\\
+\text{Software Developer} \hfill Sept 2017 | Dec 2017\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Implemented automated stock reliability ranking using Rails and MySQL. Over 6000 stocks ranked daily using this algorithm.
+	\item Converted outdated PHP account registration process to use Ruby on Rails backend and managed release process for the new changes.
+	\item Tripled page views and improved user experience on dividend.com stock search tool by adding helpful filters
+	\item Organized and prioritized agile sprints with content experts.
+\end{itemize}
+
+\textbf{Midnight Sun Solar Race Car Team} \hfill Waterloo, ON\\
+\text{Web Developer} \hfill May 2017 | Nov 2017\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Designed and implemented new website to represent the team using HTML and Javascript.
+	\item Regularly updated the website to include recent sponsorship updates.
+	\item Website can be viewed at uwmidsun.com.
+\end{itemize}
+
+\header{Projects}
+{\textbf{FoodFeed}} {\ \textbar{} Javascript, Swift} \hfill https://foodfeed.ml\\
+iOS app allowing users to easily browse through and save GIF versions of recipe videos.\\
+Developed script to populate database with GIFs and to categorize them for intuitive browsing. \\
+\vspace*{2mm}
+{\textbf{Soar}} {\ \textbar{} Java} \hfill https://goo.gl/A1T8xE\\
+Challenging android platformer where the player avoids incoming obstacles.\\
+Implemented a database so that users can see the world wide high score.\\
+\vspace*{2mm}
+{\textbf{Platformer AI}} {\ \textbar{} Javascript, HTML} \\
+Machine learning demo of neural networks attempting to beat a simple platform game by dodging obstacles. Designed genetic algorithm to improve performance over time.\\
+\vspace*{2mm}
+
+%==== Education ====%
+\header{Education}
+\textbf{University of Waterloo}\hfill Waterloo, ON\\
+B.S Computer Science \textit{GPA: 3.9} \hfill Sept 2016 - Present\\
+3rd Year
+
+\vspace{2mm}
+
+\ 
+\end{document}
